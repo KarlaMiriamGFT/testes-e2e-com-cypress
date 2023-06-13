@@ -34,7 +34,7 @@ describe('Scenarios where authentication is a pre-requirement', () => {
     })
   })
 
-  
+
   it('logs out', () => {
     cy.visit('/')
     cy.wait('@getNotes')
@@ -44,9 +44,9 @@ describe('Scenarios where authentication is a pre-requirement', () => {
         .click()
     }
     /* ==== Generated with Cypress Studio ==== */
-    cy.get('.nav > :nth-child(2) > a').click();
-    cy.get('#email').click();
-    cy.get('#email').should('be.visible');
+    cy.get('.nav > :nth-child(2) > a').click()
+    cy.get('#email').click()
+    cy.get('#email').should('be.visible')
     /* ==== End Cypress Studio ==== */
   })
 })
