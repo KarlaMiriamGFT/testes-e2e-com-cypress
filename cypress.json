@@ -1,11 +1,11 @@
 {
-    "baseUrl": "https://notes-serverless-app.com",
-    "defaultCommandTimeout": 40000,
-    "experimentalSessionSupport" : true,
-    "chromeWebSecurity": false,
-    "experimentalStudio": true,
-    "env": {
-        "viewportWidthBreakpoint": 768
-      },
-      "projectId": "ruhn7j"
+  "baseUrl": "https://notes-serverless-app.com",
+  "defaultCommandTimeout": 40000,
+  "experimentalSessionSupport" : true,
+  "chromeWebSecurity": false,
+  "experimentalStudio": true,
+  "env": {
+      "viewportWidthBreakpoint": 768
+    },
+    "projectId": "ruhn7j"
 }

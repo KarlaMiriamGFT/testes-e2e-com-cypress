@@ -1,9 +1,5 @@
-import 'cypress-mailosaur'
-import './commands'
+require('cypress-grep')()
 import 'cypress-file-upload'
 import 'cypress-iframe'
-
-module.exports = (on, config) => {
-    require('cypress-grep/src/plugin')(config)
-  }
-  require('cypress-grep')()
+import 'cypress-mailosaur'
+import './commands'

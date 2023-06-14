@@ -68,6 +68,7 @@ Cypress.Commands.add('deleteNote', note => {
 
   cy.contains('.list-group-item', note).should('not.exist')
 })
+
 Cypress.Commands.add('fillSettingsFormAndSubmit', () => {
   cy.visit('/settings')
   cy.get('#storage').type('1')

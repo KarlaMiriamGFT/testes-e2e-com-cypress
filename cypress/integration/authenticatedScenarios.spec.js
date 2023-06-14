@@ -1,4 +1,4 @@
-// authenticatedScenarios.spec.js
+/// <reference path="../support/commands.d.ts" />
 
 describe('Scenarios where authentication is a pre-requirement', () => {
   beforeEach(() => {
@@ -34,18 +34,18 @@ describe('Scenarios where authentication is a pre-requirement', () => {
     })
   })
 
-
-  it('logs out',  { tags: '@desktop-and-tablet'}, () => {
+  it('logs out', { tags: '@desktop-and-tablet' }, () => {
     cy.visit('/')
     cy.wait('@getNotes')
+
     if (Cypress.config('viewportWidth') < Cypress.env('viewportWidthBreakpoint')) {
       cy.get('.navbar-toggle.collapsed')
         .should('be.visible')
         .click()
     }
+
     /* ==== Generated with Cypress Studio ==== */
     cy.get('.nav > :nth-child(2) > a').click()
-    cy.get('#email').click()
     cy.get('#email').should('be.visible')
     /* ==== End Cypress Studio ==== */
   })

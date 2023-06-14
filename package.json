@@ -1,27 +1,19 @@
 {
   "name": "testes-e2e-com-cypress",
   "version": "1.0.0",
-  "description": "TBD.",
+  "description": "Sample project to demonstrate e2e tests written with Cypress running on GitHub Actions",
   "main": "index.js",
   "scripts": {
-    "cy:open": "cypress open",
-    "cy:open:tablet": "cypress run --record --tag 'tablet' --config viewportWidth=767,viewportHeight=480 --spec cypress/integration/authenticatedScenarios.spec.js",
-    "test": "cypress run --record --tag 'desktop'",
-    "test:tablet": "cypress run --record --tag 'tablet' --config viewportWidth=767,viewportHeight=480 --spec cypress/integration/authenticatedScenarios.spec.js --env grepTags=@desktop-and-tablet",
     "lint": "eslint cypress/**/*.js",
-    "lint:fix": "eslint cypress/**/*.js --fix"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/KarlaMiriamGFT/testes-e2e-com-cypress.git"
+    "lint:fix": "eslint cypress/**/*.js --fix",
+    "cy:open": "cypress open",
+    "cy:open:tablet": "cypress open --config viewportWidth=767,viewportHeight=480",
+    "test": "cypress run --record --tag 'desktop'",
+    "test:tablet": "cypress run --record --tag 'tablet' --config viewportWidth=767,viewportHeight=480 --spec cypress/integration/authenticatedScenarios.spec.js --env grepTags=@desktop-and-tablet"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/KarlaMiriamGFT/testes-e2e-com-cypress/issues"
-  },
-  "homepage": "https://github.com/KarlaMiriamGFT/testes-e2e-com-cypress#readme",
+  "author": "Karla Miriam ",
+  "license": "MIT",
   "devDependencies": {
     "cypress": "^8.2.0",
     "cypress-file-upload": "^5.0.8",
@@ -29,8 +21,7 @@
     "cypress-iframe": "^1.0.1",
     "cypress-mailosaur": "^2.3.3",
     "eslint": "^7.32.0",
-    "eslint-plugin-cypress": "^2.13.3",
-    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-cypress": "^2.11.3",
     "faker": "^5.5.3"
   }
 }
